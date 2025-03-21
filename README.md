@@ -51,4 +51,3 @@ The *XOR (Exclusive OR)* and *XNOR (Exclusive NOR)* gates are widely used in ari
 2. Compile and run the testbench.  
 3. Verify that the outputs match the truth tables.  
 
-Would you like to proceed with *Day 4: Multiplexers (MUX) - Theory, Design & Implementation* next?
