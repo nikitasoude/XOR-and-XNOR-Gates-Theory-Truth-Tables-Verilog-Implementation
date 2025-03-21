@@ -1,20 +1,21 @@
+ XOR and XNOR Gates – Theory, Truth Tables & Verilog Implementation**  
 
-#### *Concept Overview*  
-The *XOR (Exclusive OR)* and *XNOR (Exclusive NOR)* gates are widely used in arithmetic circuits, error detection, and data processing.  
+#### **Concept Overview**  
+The **XOR (Exclusive OR)** and **XNOR (Exclusive NOR)** gates are widely used in arithmetic circuits, error detection, and data processing.  
 
 ---
 
-## *1️⃣ XOR Gate*  
-- *Definition:* The XOR gate outputs 1 only when the inputs are different. If both inputs are the same, the output is 0.  
-- *Boolean Expression:*  
+## **1️⃣ XOR Gate**  
+- **Definition:** The XOR gate outputs `1` only when the inputs are different. If both inputs are the same, the output is `0`.  
+- **Boolean Expression:**  
   \[
   Y = A \oplus B = (A \cdot \overline{B}) + (\overline{A} \cdot B)
   \]
-- *Applications:*  
+- **Applications:**  
   - Used in half adders and full adders.  
   - Used in parity generators for error detection.  
 
-### *Truth Table*  
+### **Truth Table**  
 
 | A | B | Y (A XOR B) |
 |---|---|------------|
@@ -25,17 +26,17 @@ The *XOR (Exclusive OR)* and *XNOR (Exclusive NOR)* gates are widely used in ari
 
 ---
 
-## *2️⃣ XNOR Gate*  
-- *Definition:* The XNOR gate is the complement of XOR. It outputs 1 when both inputs are the same and 0 when they are different.  
-- *Boolean Expression:*  
+## **2️⃣ XNOR Gate**  
+- **Definition:** The XNOR gate is the complement of XOR. It outputs `1` when both inputs are the same and `0` when they are different.  
+- **Boolean Expression:**  
   \[
   Y = A \odot B = \overline{A \oplus B} = (A \cdot B) + (\overline{A} \cdot \overline{B})
   \]
-- *Applications:*  
+- **Applications:**  
   - Used in equality comparison circuits.  
   - Used in error detection and correction mechanisms.  
 
-### *Truth Table*  
+### **Truth Table**  
 
 | A | B | Y (A XNOR B) |
 |---|---|-------------|
@@ -44,10 +45,15 @@ The *XOR (Exclusive OR)* and *XNOR (Exclusive NOR)* gates are widely used in ari
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
+---
 
+## **Code Explanation**  
+- **Module `xor_xnor_gate`**: Implements XOR and XNOR operations using `assign`.  
+- **Testbench**:  
+  - **$monitor** prints input-output values for different test cases.  
+  - Simulates XOR/XNOR logic for all possible input combinations.  
 
-### *Execution Steps*  
+### **Execution Steps**  
 1. Copy the Verilog code into a simulator (ModelSim, Xilinx Vivado, etc.).  
 2. Compile and run the testbench.  
 3. Verify that the outputs match the truth tables.  
-
